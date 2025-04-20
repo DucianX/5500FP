@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<header th:replace="admin/header::header-fragment"></header>
+<body class="hold-transition sidebar-mini">
+<div class="wrapper">
+    <!-- Include header-fragment -->
+    <div th:replace="admin/header::header-nav"></div>
+    <!-- Include sidebar-fragment -->
+    <div th:replace="admin/sidebar::sidebar-fragment(${path})"></div>
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <div class="content-header">
+            <div class="container-fluid">
+            </div><!-- /.container-fluid -->
+        </div>
+        <!-- Main content -->
+        <div class="content">
+            <div class="card card-primary card-outline">
+                <div class="card-header">
+                    <h3 class="card-title">Home</h3>
+                </div> <!-- /.card-body -->
+                <div class="card-body">
+                    <div class="panel panel-default">
+                        <div style="padding: 10px 0 20px 10px;">
+                            <a href="https://gitee.com/newbee-ltd/newbee-mall" target="_blank">
+                                <img th:src="@{/admin/dist/img/newbee-logo.png}" style="width: 480px;height: 240px;">
+                                <p>The newbee-mall project is a complete e-commerce system including the newbee-mall front-end and newbee-mall-admin back-end management system, developed based on Spring Boot 2.X and related tech stack.
+                                    The front-end includes modules such as homepage, product category, new arrivals, homepage carousel, product recommendation, search, product details, shopping cart, order checkout, order process, user order management, member center, and help center.
+                                    The admin system includes modules such as data dashboard, carousel management, product management, order management, user management, category management, and settings.</p>
+                                <ul>
+                                    <li>newbee-mall is very beginner-friendly — no complex steps needed, and the full system can start in just 2 seconds;</li>
+                                    <li>It is also an enterprise-level Spring Boot project, making it an excellent choice for Java developers at all stages;</li>
+                                    <li>You can use it as a comprehensive Spring Boot practice project — it's well-designed, open-source, feature-complete, has full workflows, and beautiful UI interactions;</li>
+                                    <li>With modern tech stack and rich knowledge points, it helps deepen understanding and improve your competitiveness in the job market;</li>
+                                    <li>If you're job hunting, you can also list this project in your resume to enhance your portfolio;</li>
+                                    <li>There are still some imperfections in the project — I'm not very experienced, and I hope for your understanding;</li>
+                                    <li>If you have any questions, feel free to contact me — I’ll try my best to improve it.</li>
+                                </ul>
+                            </a>
+                            <h3>Contact the Author</h3>
+                            <ul>
+                                <li>Email: 2449207463@qq.com</li>
+                                <li>QQ Technical Group: 796794009</li>
+                            </ul>
+                            <p>newbee-mall is hosted on both GitHub and Gitee. If your GitHub access is slow, feel free to visit the Gitee repository. Both repositories are kept in sync.</p>
+                            <ul>
+                                <li><a href="https://github.com/newbee-ltd/newbee-mall" target="_blank">newbee-mall on GitHub</a></li>
+                                <li><a href="https://gitee.com/newbee-ltd/newbee-mall" target="_blank">newbee-mall on Gitee</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- /.container-fluid -->
+        </div>
+        <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+    <!-- Include footer-fragment -->
+    <div th:replace="admin/footer::footer-fragment"></div>
+</div>
+<!-- jQuery -->
+<script th:src="@{/admin/plugins/jquery/jquery.min.js}"></script>
+<!-- Bootstrap 4 -->
+<script th:src="@{/admin/plugins/bootstrap/js/bootstrap.bundle.min.js}"></script>
+<!-- AdminLTE App -->
+<script th:src="@{/admin/dist/js/adminlte.min.js}"></script>
+</body>
+</html>
