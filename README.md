@@ -46,7 +46,7 @@ A full-featured e-commerce system combining server-rendered pages and a modern S
 1. **Clone the repo**
 
    ```bash
-   git clone https://github.com/your-org/mallplus.git
+   git clone https://github.com/DucianX/5500FP.git
    cd mallplus
    ```
 
